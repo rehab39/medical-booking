@@ -103,5 +103,16 @@
       ]
     }
   ],
-  "appointments": []
+  "appointments": [
+    {
+      "patientName": "Rehab",
+      "email": "za.safgg4434@gmail.com",
+      "date": "2026-02-03",
+      "time": "02:02",
+      "note": "",
+      "doctorId": "1",
+      "doctorName": "Dr. Ahmed Hassan",
+      "id": "bmj0YevY4aw"
+    }
+  ]
 }

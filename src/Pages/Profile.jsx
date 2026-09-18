@@ -7,18 +7,24 @@ const Profile = () => {
     inputRef.current.focus()
   }
   const { user, setUser } = useAppStore()
-
-  const [name, setName] = useState(user.name)
   const [email, setEmail] = useState(user.email)
 
-  const handleSave = () => {
-    setUser({
-      name,
-      email
-    })
+const handleSave = () => {
+  const nameValue = inputRef.current.value
 
-    alert("Profile saved successfully!")
+  if (!nameValue || !email) {
+    alert("Please enter your name and email.")
+    return
   }
+
+  setUser({
+    name: nameValue,
+    email
+  })
+
+  alert("Profile saved successfully!")
+}
+
 
   return (
     <div className="container py-5">
@@ -39,10 +45,10 @@ const Profile = () => {
               <input
                 type="text"
                 className="form-control"
-                value={name}
+                defaultValue={user.name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Enter your name"
-                   ref={inputRef}
+                ref={inputRef}
               />
             </div>
 
@@ -55,7 +61,7 @@ const Profile = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
-             
+
               />
             </div>
 
