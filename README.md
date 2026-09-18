@@ -1,19 +1,88 @@
-# React + Vite
+Medical Booking App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive medical booking web application built with React.
+The application allows users to browse doctors, search and filter by specialty, view doctor details, book appointments, and manage their appointments.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Browse available doctors
+- Search doctors by name
+- Filter doctors by specialty
+- View doctor details
+- Book an appointment
+- View all appointments
+- Update appointment date and time
+- Cancel appointments with confirmation
+- Profile management
+- Form validation using React Hook Form
+- Global state management using Zustand
+- Responsive design with Bootstrap
+- 404 Not Found page
+- Loading and error states
+- REST API integration using Axios
+- JSON Server for the backend
 
-## React Compiler
+Technologies Used
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- React
+- React Router
+- Axios
+- React Hook Form
+- Zustand
+- Bootstrap
+- JSON Server
+- Vite
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+Project Structure
 
-## Expanding the Oxlint configuration
+src/
+├── Components/
+│   ├── DoctorCard.jsx
+│   └── Navbar.jsx
+├── Pages/
+│   ├── Doctors.jsx
+│   ├── DoctorDetails.jsx
+│   ├── BookAppointment.jsx
+│   ├── Appointment.jsx
+│   ├── Profile.jsx
+│   └── NotFound.jsx
+├── Services/
+│   └── api.js
+├── Store/
+│   └── useAppStore.js
+├── App.jsx
+├── App.css
+└── main.jsx
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+API
+
+The application uses JSON Server as a local REST API.
+
+Main endpoints:
+
+- "GET /doctors"
+- "GET /doctors/:id"
+- "GET /appointments"
+- "POST /appointments"
+- "PUT /appointments/:id"
+- "DELETE /appointments/:id"
+
+How to Run the Project
+
+Install dependencies:
+
+npm install
+
+Start the JSON Server:
+
+npx json-server --watch db.json
+
+Start the React development server in another terminal:
+
+npm run dev
+
+The application will run using the Vite development server.
+
+Author
+
+Medical Booking App — React Project
