@@ -1,0 +1,68 @@
+
+ body {
+  background-color: #f8fafc ;
+}
+
+.navbar {
+  min-height: 72px;
+}
+
+.navbar-brand {
+  font-size: 21px;
+}
+
+.nav-link {
+  color: #555 !important;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+.nav-link i {
+  font-size: 16px;
+}
+.doctor-card {
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.doctor-image {
+  height: 240px;
+  object-fit: cover;
+}
+
+.doctor-card .btn {
+  border-radius: 10px;
+}
+
+.doctor-card .badge {
+  border-radius: 20px;
+  padding: 8px 12px;
+  font-weight: 500;
+}
+.doctor-details-image {
+  width: 100%;
+  max-width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+
+
+
+
+
+
+
+
+

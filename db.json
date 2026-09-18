@@ -1,0 +1,107 @@
+{
+  "doctors": [
+    {
+      "id": "1",
+      "name": "Dr. Ahmed Hassan",
+      "specialty": "Cardiology",
+      "image": "https://i.pravatar.cc/300?img=12",
+      "description": "Specialist in heart diseases and cardiovascular care.",
+      "workingDays": [
+        "Saturday",
+        "Monday",
+        "Wednesday"
+      ],
+      "slots": [
+        "10:00 AM",
+        "12:00 PM",
+        "02:00 PM"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Dr. Sara Mohamed",
+      "specialty": "Dermatology",
+      "image": "https://i.pravatar.cc/300?img=47",
+      "description": "Specialist in skin diseases and dermatological treatment.",
+      "workingDays": [
+        "Sunday",
+        "Tuesday",
+        "Thursday"
+      ],
+      "slots": [
+        "09:00 AM",
+        "11:00 AM",
+        "01:00 PM"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Dr. Omar Ali",
+      "specialty": "Dentistry",
+      "image": "https://i.pravatar.cc/300?img=11",
+      "description": "Experienced dentist providing general and cosmetic dental care.",
+      "workingDays": [
+        "Saturday",
+        "Tuesday",
+        "Thursday"
+      ],
+      "slots": [
+        "10:00 AM",
+        "01:00 PM",
+        "04:00 PM"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Dr. Mariam Adel",
+      "specialty": "Pediatrics",
+      "image": "https://i.pravatar.cc/300?img=32",
+      "description": "Pediatrician specialized in children's healthcare.",
+      "workingDays": [
+        "Sunday",
+        "Monday",
+        "Wednesday"
+      ],
+      "slots": [
+        "09:00 AM",
+        "12:00 PM",
+        "03:00 PM"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Dr. Youssef Samir",
+      "specialty": "Neurology",
+      "image": "https://i.pravatar.cc/300?img=68",
+      "description": "Neurologist specialized in nervous system disorders.",
+      "workingDays": [
+        "Saturday",
+        "Monday",
+        "Thursday"
+      ],
+      "slots": [
+        "11:00 AM",
+        "01:00 PM",
+        "04:00 PM"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Dr. Nour Ahmed",
+      "specialty": "Ophthalmology",
+      "image": "https://i.pravatar.cc/300?img=44",
+      "description": "Eye specialist providing comprehensive eye care.",
+      "workingDays": [
+        "Sunday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "slots": [
+        "10:00 AM",
+        "12:00 PM",
+        "02:00 PM"
+      ]
+    }
+  ],
+  "appointments": []
+}
