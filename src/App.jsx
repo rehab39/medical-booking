@@ -7,7 +7,7 @@ import NotFound from "./Pages/NotFound"
 import BookAppointment from "./Pages/BookAppointment"
 import Appointment from "./Pages/Appointment"
 import Navbar from "./Components/Navbar"
-
+import Footer from "./Components/Footer"
 const App = () => {
   return (
     <div>
@@ -23,7 +23,7 @@ const App = () => {
           <Route path="*" element={<NotFound />} />
 
         </Routes>
-
+        <Footer />
       </BrowserRouter>
 
 
