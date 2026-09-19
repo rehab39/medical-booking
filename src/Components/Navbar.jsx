@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-
+import useAppStore from '../Store/useAppStore'
 const Navbar = () => {
+  const { darkMode, toggleDarkMode } = useAppStore()
   return (
     <nav className="navbar navbar-expand-lg bg-white shadow-sm">
       <div className="container">
@@ -45,7 +46,12 @@ const Navbar = () => {
             </Link>
 
           </div>
-
+          <button
+            className="btn btn-outline-secondary"
+            onClick={toggleDarkMode}
+          >
+            {darkMode ? "☀️" : "🌙"}
+          </button>
         </div>
       </div>
     </nav>

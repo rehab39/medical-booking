@@ -1,7 +1,8 @@
 import React from "react"
 import { Link } from "react-router-dom"
-
+import useAppStore from "../Store/useAppStore"
 function DoctorCard({ doctor }) {
+  const { favorites, toggleFavorite } = useAppStore()
   return (
     <div className="card h-100 border-0 shadow-sm doctor-card">
 
@@ -44,6 +45,12 @@ function DoctorCard({ doctor }) {
         </Link>
 
       </div>
+      <button
+        className="btn btn-outline-danger"
+        onClick={() => toggleFavorite(doctor.id)}
+      >
+        {favorites.includes(doctor.id) ? "♥" : "♡"}
+      </button>
     </div>
   )
 }

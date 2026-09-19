@@ -56,7 +56,26 @@
   object-fit: cover;
   border-radius: 16px;
 }
+.dark-mode {
+  background-color: #212529;
+  color: white;
+  min-height: 100vh;
+}
 
+.dark-mode .card {
+  background-color: #343a40;
+  color: white;
+}
+
+.dark-mode .form-control {
+  background-color: #343a40;
+  color: white;
+  border-color: #6c757d;
+}
+
+.dark-mode .form-control::placeholder {
+  color: #adb5bd;
+}
 
 
 

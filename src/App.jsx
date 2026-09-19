@@ -8,9 +8,12 @@ import BookAppointment from "./Pages/BookAppointment"
 import Appointment from "./Pages/Appointment"
 import Navbar from "./Components/Navbar"
 import Footer from "./Components/Footer"
+import useAppStore from "./Store/useAppStore"
 const App = () => {
+  const { darkMode } = useAppStore()
   return (
-    <div>
+
+    <div className={darkMode ? "dark-mode" : ""}>
 
       <BrowserRouter>
         <Navbar />

@@ -1,5 +1,5 @@
 import { useState, useRef } from "react"
-import { useAppStore } from "../Store/useAppStore"
+import useAppStore from "../Store/useAppStore"
 
 const Profile = () => {
   const inputRef = useRef(null)
@@ -9,21 +9,21 @@ const Profile = () => {
   const { user, setUser } = useAppStore()
   const [email, setEmail] = useState(user.email)
 
-const handleSave = () => {
-  const nameValue = inputRef.current.value
+  const handleSave = () => {
+    const nameValue = inputRef.current.value
 
-  if (!nameValue || !email) {
-    alert("Please enter your name and email.")
-    return
+    if (!nameValue || !email) {
+      alert("Please enter your name and email.")
+      return
+    }
+
+    setUser({
+      name: nameValue,
+      email
+    })
+
+    alert("Profile saved successfully!")
   }
-
-  setUser({
-    name: nameValue,
-    email
-  })
-
-  alert("Profile saved successfully!")
-}
 
 
   return (
